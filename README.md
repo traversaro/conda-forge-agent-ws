@@ -8,15 +8,9 @@ This repo is a [pixi](https://pixi.sh/) workspace pre-configured with the tools 
 
 ## Getting started
 
-Install dependencies (tools + skills):
+Install pixi environments and skills:
 
 ```sh
-pixi install
-```
-
-Then symlink the installed skills into your agent's expected location:
-
-```sh
-pixi exec pixi-skills manage
+pixi run pixi skills manage
 ```
 
