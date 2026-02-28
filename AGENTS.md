@@ -1,0 +1,47 @@
+This repo works as a reproducible workspace for working on conda-force feedstocks.
+
+The main tools used are:
+  * pixi-skills
+
+
+## Avoid too much unnecessary PR descriptions
+
+When creating PRs description, please avoid unnecessary details in the context of conda-forge.
+
+For example, instead of:
+
+~~~
+Fixes #114
+
+This PR adds a dedicated `mujoco-sysid` output to map the upstream `mujoco[sysid]` extra into conda-forge package outputs.
+
+- Adds new noarch output: `mujoco-sysid` (`noarch: python`)
+- Uses conda-forge noarch-python pinning (`python_min`) for host/run/tests
+- Depends on `mujoco-python` plus the upstream sysid extra dependencies
+- Adds basic tests (`import mujoco` and `pip check`)
+- Bumps build number to `1`
+
+This branch is based on the current `conda-forge/mujoco-feedstock` `main` (post-#111).
+~~~
+
+you should write:
+
+~~~
+Fixes #114
+
+This PR adds a dedicated `mujoco-sysid` output to map the upstream `mujoco[sysid]` extra into conda-forge package outputs.
+~~~
+
+## Avoid \n in PR descriptions and comments
+
+You should always avoid `\n` in comments, for example instead of:
+
+~~~
+Opened the required admin-request to allow the new output name:\nhttps://github.com/conda-forge/admin-requests/pull/1908
+~~~
+
+you should write:
+
+~~~
+Opened the required admin-request to allow the new output name: https://github.com/conda-forge/admin-requests/pull/1908
+~~~

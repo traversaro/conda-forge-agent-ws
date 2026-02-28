@@ -1,0 +1,11 @@
+[workspace]
+channels = ["conda-forge", "https://prefix.dev/skill-forge"]
+platforms = ["linux-64", "osx-arm64", "win-64"]
+
+[dependencies]
+rattler-build = "*"
+conda-build = "*"
+conda-smithy = "*"
+agent-skill-conda-forge = "*"
+agent-skill-rattler-build = "*"
+gh = "*"
