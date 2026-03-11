@@ -9,3 +9,13 @@ conda-smithy = "*"
 agent-skill-conda-forge = "*"
 agent-skill-rattler-build = "*"
 gh = "*"
+cf-job-logs = "*"
+
+# Caching support
+ccache = "*"
+sccache = "*"
+
+[activation.env]
+# ccache support
+CMAKE_C_COMPILER_LAUNCHER="sccache"
+CMAKE_CXX_COMPILER_LAUNCHER="sccache"
