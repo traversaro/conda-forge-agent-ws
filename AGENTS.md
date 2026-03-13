@@ -13,10 +13,12 @@ If you need to run tools like `rg` or `gh`, please run them as `pixi run rg` or 
 See https://rattler-build.prefix.dev/v0.57.2/tips_and_tricks/#using-sccache-or-ccache-with-rattler-build, the dependencies and cmake variables are set in the pixi.toml, so running:
 
 ~~~
-pixi run rattler-build build --no-build-id --recipe-dir <something>
+pixi run rattler-build build --no-build-id --recipe-dir <something> -m <pinning-file>
 ~~~
 
 should permit to speedup consecutive builds.
+
+For  <pinning-file>` use the one in `.ci_support`.
 
 ## Avoid too much unnecessary PR descriptions
 
